@@ -10,7 +10,11 @@ class Todos extends Component {
   }
 }
 
-// PropTypes
+// PropTypes - a form of type checking
+// to avoid passing in the wrong data type to a component
+// by default, the props or a compenent are optional
+// Adding 'isRequired' makes sure a warning is generated if the prop is not
+// provided to the component.
 Todos.propTypes = {
   todos: PropTypes.array.isRequired
 }
