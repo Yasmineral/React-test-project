@@ -1,0 +1,12 @@
+ Use arrow functions for custom methods otherwise 'this' will be undefined...
+
+  e.g markComplete = () => {}
+
+...if a method is part of the compenent class, e.g render, 'this' is available & in scope.
+For custom methods, you could either bind this OR more simply, use an arrow function.
+
+ 
+Without a state manager, you need to climb the tree (called compenent drilling?)
+Since we have our state inside of App.js, we can't simply say 'this.setState' and change the value to true or false
+We have to go from todoItem -> Todos -> App. The way we do this is through props.
+We create methods inside of our props and we call those. 
