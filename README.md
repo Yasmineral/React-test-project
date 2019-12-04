@@ -1,3 +1,9 @@
+## React Test Project
+
+Having a play around in React, creating a Todo list manager :)
+
+
+---
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
