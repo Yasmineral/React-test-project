@@ -10,3 +10,13 @@ Without a state manager, you need to climb the tree (called compenent drilling?)
 Since we have our state inside of App.js, we can't simply say 'this.setState' and change the value to true or false
 We have to go from todoItem -> Todos -> App. The way we do this is through props.
 We create methods inside of our props and we call those. 
+
+
+To pass along id's, you could bind the id to the markcomplete props.
+e.g onChange={this.props.markComplete.bind(this, this.props.todo.id)
+But this can get tedious. Instead we can use something called 'destructuring' to pull the variables out of the todo & the props.
+e.g const { id, title } = this.props.todo 
+Now you can refer to id and title without 'this.props' etc.
+
+
+
