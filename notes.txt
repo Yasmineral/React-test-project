@@ -34,3 +34,12 @@ methods e.g render, componentDidMount. With a functional componenet, there's one
 that works like the render does. 
 
 For class based components, type 'rec' then tab, and VSCode will auto fill the code layout you need.
+
+AddTodo:
+Input field within Addtodo: when you have an input field, usually you're going to want to have your
+fields as a peiece of state for that component. You need to make sure you have an onChange handler.
+The state within this page is an example of component state, i.e it only exists within the AppTodo componenet.
+ The todos, however, are app level state as we're sharing that between componenets. Software such as Redux helps you
+ to manage app level state.
+ 
+  
