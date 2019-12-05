@@ -22,7 +22,11 @@ Now you can refer to id and title without 'this.props' etc.
 Markcomplete method within app.js is now toggling the state at the top (between true and false depending
 on whether the item has been clicked), and this state is being brought down through the props into
 the componments. Think of state as a cloud of data that hovers above all the componments, and then we're sending something
-up to change it, and then it rains back down. It's a one way data flow...
+up to change it, and then it rains back down. It's a one way data flow.
 
+Delete function - we do this with the filter method which loops through all the todo items and then, based on a condition,
+will return another array. So in this case, we only want to return todos that don't match the id that's
+passed in. The spread operator (three dots '...') copies everything that's already there in the todos object.
+Todo's will return on reload as we are not persisting to a database.
 
 
