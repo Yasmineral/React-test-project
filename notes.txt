@@ -32,3 +32,5 @@ Todo's will return on reload as we are not persisting to a database.
 Header.js in layout folder - return is similar to render. So, when we have a class we have different
 methods e.g render, componentDidMount. With a functional componenet, there's one return
 that works like the render does. 
+
+For class based components, type 'rec' then tab, and VSCode will auto fill the code layout you need.
